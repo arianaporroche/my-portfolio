@@ -28,7 +28,7 @@ export const projects: Project[] = [
         title: 'GeoAda',
         description:
             'Aplicación web para gestionar las reservas de los espacios del edificio Ada Byron de la Universidad de Zaragoza.',
-        techStack: ['React', 'NestJS', 'PostgreSQL', 'pygeoapi', 'Docker'],
+        techStack: ['React', 'NestJS', 'PostgreSQL', 'Pygeoapi', 'Docker'],
         webImage: '/geoada.png',
         webAlt: 'GeoAda web',
     },

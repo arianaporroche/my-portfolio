@@ -166,6 +166,56 @@ nav {
   transform: translateX(4px);
 }
 
+.about-me {
+  padding: 5rem 3rem 4.5rem;
+  background: var(--surface);
+  border-bottom: 0.5px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 3rem;
+}
+
+.about-me-name {
+  font-family: var(--mono);
+  font-size: clamp(3rem, 4vw, 6rem);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+
+.about-me-name em {
+  font-style: normal;
+  color: var(--accent-mid);
+}
+
+.about-me-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-me-tags-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-me-tag {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  background: var(--accent-light);
+  color: var(--accent-mid);
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  /* border: 0.5px solid var(--rule2); */
+  border: none;
+  border-radius: 2px;
+}
+
 .section-header {
   display: flex;
   align-items: baseline;
@@ -406,6 +456,8 @@ nav {
   font-size: 10.5px;
   color: var(--muted2);
   letter-spacing: 0.04em;
+  align-self: start;
+  margin-left: 1rem;
 }
 
 .project-title {
