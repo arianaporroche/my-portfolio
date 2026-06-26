@@ -13,7 +13,7 @@
   --surface: #FFFFFF;
   --mono: 'JetBrains Mono', monospace;
   --display: 'Cormorant Garamond', serif;
-  --body: 'DM Sans', sans-serif;
+  --body: 'Cormorant Garamond', serif;
   --btn-primary-bg: #1A9A84;
   --btn-primary-text: #FFFFFF;
   --btn-primary-bg-hover: #2DB8A0;
@@ -223,8 +223,27 @@ nav {
   flex-shrink: 0;
 }
 
-.education-list {
-  padding: 0 3rem 3rem;
+.education-columns-container {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 3rem;
+}
+
+.education-column {
+  padding: 0;
+}
+
+.education-divider {
+  background: var(--rule);
+  margin: 0 1rem;
+  width: 0.5px;
+}
+
+.education-list--languages {
+  padding-left: 0;
 }
 
 .education-item {

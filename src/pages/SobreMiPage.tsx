@@ -39,13 +39,40 @@ function SobreMiPage() {
 
             <section>
                 <SectionHeader title="Formación académica" />
-                <div className="education-list">
-                    <div className="education-item">
-                        <div className="education-row">
-                            <span className="education-degree">Grado en Ingeniería Informática</span>
-                            <span className="education-year">2022 – 2026</span>
+                <div className="education-columns-container">
+                    <div className="education-column">
+                        <div className="education-item">
+                            <div className="education-row">
+                                <span className="education-degree">Grado en Ingeniería Informática</span>
+                                <span className="education-year">2022 – 2026</span>
+                            </div>
+                            <div className="education-institution">Universidad de Zaragoza · Escuela de Ingeniería y Arquitectura</div>
                         </div>
-                        <div className="education-institution">Universidad de Zaragoza · Escuela de Ingeniería y Arquitectura</div>
+                    </div>
+                    <div className="education-divider" />
+                    {/* <div className="education-list education-list--languages">
+                        <div className="education-item">
+                            <div className="education-degree">Español</div>
+                            <div className="education-institution">Nativo</div>
+                        </div>
+                        <div className="education-item">
+                            <div className="education-degree">Inglés</div>
+                            <div className="education-institution">B2</div>
+                        </div>
+                    </div> */}
+                    <div className="education-column">
+                        <div className="education-item">
+                            <div className="education-row">
+                                <div className="education-degree">Español</div>
+                                <div className="education-institution">Nativo</div>
+                            </div>
+                        </div>
+                        <div className="education-item">
+                            <div className="education-row">
+                                <div className="education-degree">Inglés</div>
+                                <div className="education-institution">B2</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
