@@ -34,7 +34,9 @@ function ProjectCard({
             </div>
             <div className="project-body">
                 <div className="project-top">
-                    <span className="project-type">{type}</span>
+                    <div className="project-type-wrap">
+                        <span className="project-type">{type}</span>
+                    </div>
                     <span className="project-year">{year}</span>
                 </div>
                 <h3 className="project-title">{title}</h3>
