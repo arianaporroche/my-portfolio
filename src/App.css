@@ -211,9 +211,17 @@ nav {
   color: var(--accent-mid);
   letter-spacing: 0.04em;
   padding: 3px 8px;
-  /* border: 0.5px solid var(--rule2); */
   border: none;
   border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.about-me-tag-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 
 .section-header {

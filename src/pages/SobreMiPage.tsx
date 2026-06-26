@@ -16,10 +16,18 @@ function SobreMiPage() {
                         Busco mi primera oportunidad profesional donde seguir aprendiendo y contribuir desde el primer día.
                     </p>
                     <div className="about-me-tags-container">
-                        <span className="about-me-tag" key="contact">
+                        <span className="about-me-tag" key="location">
+                            <svg className="about-me-tag-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.4" d="M8 8.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.4" d="M8 1.5a5 5 0 0 1 5 5c0 3.5-5 8-5 8s-5-4.5-5-8a5 5 0 0 1 5-5Z" />
+                            </svg>
                             Zaragoza, España
                         </span>
-                        <span className="about-me-tag" key="contact">
+                        <span className="about-me-tag" key="available">
+                            <svg className="about-me-tag-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="8" cy="8" r="3.5" fill="currentColor" />
+                                <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" strokeWidth="1.2" opacity="0.35" />
+                            </svg>
                             Disponible
                         </span>
                     </div>
