@@ -48,6 +48,12 @@ nav {
   font-size: 12px;
   color: var(--accent);
   letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-logo:hover {
+  color: var(--accent-mid);
 }
 
 .nav-links {
@@ -56,18 +62,25 @@ nav {
   list-style: none;
 }
 
-.nav-links a {
+.nav-link {
   font-family: var(--body);
   font-size: 13px;
   font-weight: 400;
   color: var(--muted);
   text-decoration: none;
   letter-spacing: 0.04em;
-  transition: color 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
   color: var(--accent-mid);
+}
+
+.nav-link--active {
+  color: var(--accent-mid);
+  border-bottom-color: var(--accent-mid);
 }
 
 .hero {
@@ -461,18 +474,16 @@ nav {
 .about-strip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  margin: 0rem 3rem 0;
-  border: 0.5px solid var(--rule);
-  background: var(--surface);
+  gap: 1rem;
+  margin: 0 3rem;
+  background: transparent;
 }
 
 .about-column {
-  padding: 3rem;
-  /* border: 0.5px solid var(--rule); */
-}
-
-.about-column+.about-column {
-  border-left: 0.5px solid var(--rule);
+  padding: 2.5rem;
+  border: 0.5px solid var(--rule);
+  background: var(--surface);
+  border-radius: 4px;
 }
 
 .about-label {
@@ -574,4 +585,26 @@ footer {
   font-family: var(--mono);
   font-size: 10px;
   color: var(--muted2);
+}
+
+/* Contact page */
+.contact-wrapper {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 560px;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-btn {
+  width: fit-content;
+  font-size: 13px;
+  padding: 0.85rem 1.75rem;
 }
