@@ -168,7 +168,6 @@ nav {
 
 .about-me {
   padding: 5rem 3rem 4.5rem;
-  background: var(--surface);
   border-bottom: 0.5px solid var(--rule);
   display: grid;
   grid-template-columns: 1fr auto;
@@ -206,7 +205,7 @@ nav {
 
 .about-me-tag {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 11px;
   background: var(--accent-light);
   color: var(--accent-mid);
   letter-spacing: 0.04em;
@@ -222,6 +221,50 @@ nav {
   width: 12px;
   height: 12px;
   flex-shrink: 0;
+}
+
+.education-list {
+  padding: 0 3rem 3rem;
+}
+
+.education-item {
+  padding: 1.25rem 0;
+  border-top: 0.5px solid var(--rule);
+}
+
+.education-item:last-child {
+  border-bottom: 0.5px solid var(--rule);
+}
+
+.education-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.education-degree {
+  font-family: var(--body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.education-year {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.education-institution {
+  font-family: var(--body);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--muted);
 }
 
 .section-header {

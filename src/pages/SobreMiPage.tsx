@@ -36,6 +36,20 @@ function SobreMiPage() {
                     </Link>
                 </div>
             </section>
+
+            <section>
+                <SectionHeader title="Formación académica" />
+                <div className="education-list">
+                    <div className="education-item">
+                        <div className="education-row">
+                            <span className="education-degree">Grado en Ingeniería Informática</span>
+                            <span className="education-year">2022 – 2026</span>
+                        </div>
+                        <div className="education-institution">Universidad de Zaragoza · Escuela de Ingeniería y Arquitectura</div>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <SectionHeader title="Stack tecnológico" />
                 <div className="about-strip">
