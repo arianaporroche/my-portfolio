@@ -17,9 +17,9 @@ export const projects: Project[] = [
         title: 'A-Darts',
         description: 'Sistema de gestión en tiempo real de torneos de dardos de punta de acero.',
         techStack: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Docker'],
-        webImage: 'a-darts-web.png',
+        webImage: '/a-darts-web.png',
         webAlt: 'A-Darts web',
-        mobileImage: 'a-darts-web.png',
+        mobileImage: '/a-darts-mobile.png',
         mobileAlt: 'A-Darts móvil',
     },
     {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
         description:
             'Aplicación web para gestionar las reservas de los espacios del edificio Ada Byron de la Universidad de Zaragoza.',
         techStack: ['React', 'NestJS', 'PostgreSQL', 'pygeoapi', 'Docker'],
-        webImage: 'geoada.png',
+        webImage: '/geoada.png',
         webAlt: 'GeoAda web',
     },
     {
@@ -39,7 +39,7 @@ export const projects: Project[] = [
         description:
             'Aplicación web que utiliza datos de observación terrestre de la NASA para predecir condiciones meteorológicas en Zaragoza.',
         techStack: ['React', 'Python', 'IA'],
-        webImage: 'plan-my-weather.png',
+        webImage: '/plan-my-weather.png',
         webAlt: 'PlanMyWeather web',
     },
 ];

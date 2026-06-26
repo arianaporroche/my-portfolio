@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
+import ProjectCard from './components/ProjectCard';
 import { projects } from './data/projects';
 import { skillColumns } from './data/skills';
 import ProyectosPage from './pages/ProyectosPage';
@@ -36,19 +37,18 @@ function LandingPage() {
         </div>
         <div className="projects-grid">
           {projects.slice(0, 2).map((project) => (
-            <div key={project.title} style={{ all: 'unset', display: 'contents' }}>
-              <div className="project-card" style={{ cursor: 'default' }}>
-                <div className="mockup-area web-only" style={{ minHeight: 120 }} />
-                <div className="project-body">
-                  <div className="project-top">
-                    <span className="project-type">{(project as any).type ?? 'Proyecto'}</span>
-                    <span className="project-year">{(project as any).year ?? ''}</span>
-                  </div>
-                  <div className="project-title">{project.title}</div>
-                  <p className="project-desc">{project.description}</p>
-                </div>
-              </div>
-            </div>
+            <ProjectCard
+              key={project.title}
+              type={project.type}
+              year={project.year}
+              title={project.title}
+              description={project.description}
+              techStack={project.techStack}
+              webImage={project.webImage}
+              webAlt={project.webAlt}
+              mobileImage={project.mobileImage}
+              mobileAlt={project.mobileAlt}
+            />
           ))}
         </div>
         <div style={{ padding: '1.5rem 3rem 0' }}>
