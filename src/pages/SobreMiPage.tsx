@@ -1,6 +1,7 @@
 import SkillColumn from '../components/SkillColumn';
 import SectionHeader from '../components/SectionHeader';
 import { skillColumns } from '../data/skills';
+import { logros } from '../data/logros';
 import { Link } from 'react-router-dom';
 
 function SobreMiPage() {
@@ -70,6 +71,27 @@ function SobreMiPage() {
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section>
+                <SectionHeader title="Experiencia extracurricular" />
+                <div className="logros-grid">
+                    {logros.map((logro) => (
+                        <div className="logro-card" key={logro.title}>
+                            <div className="logro-card-meta">
+                                <span className="logro-card-place">{logro.place}</span>
+                                <span className="logro-card-year">{logro.year}</span>
+                            </div>
+                            <div className="logro-card-title">{logro.title}</div>
+                            <p className="logro-card-desc">{logro.description}</p>
+                            <div className="logro-card-skills">
+                                {logro.skills.map((skill) => (
+                                    <span className="logro-skill-tag" key={skill}>{skill}</span>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
 
