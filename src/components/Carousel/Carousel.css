@@ -1,0 +1,54 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    background: var(--surface);
+    padding: 2rem 0;
+    perspective: 1200px;
+}
+
+.carousel-stage {
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    animation: carousel-loop 30s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.carousel-item {
+    width: 320px;
+    aspect-ratio: 7/5;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transform: rotateY(-5deg) scale(0.96);
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes carousel-loop {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-100% / 3), 0, 0);
+    }
+}

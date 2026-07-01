@@ -7,6 +7,16 @@ import { skillColumns } from './data/skills';
 import ProyectosPage from './pages/ProyectosPage';
 import SobreMiPage from './pages/SobreMiPage';
 import ContactoPage from './pages/ContactoPage';
+import { Carousel } from './components/Carousel/Carousel';
+
+const misProyectos = [
+  '/mockups/a-darts.png',
+  '/mockups/codelab.png',
+  '/mockups/dartly.png',
+  '/mockups/geoada.png',
+  '/mockups/montgomery-safety-map.png',
+  '/mockups/plan-my-weather.png',
+];
 
 function LandingPage() {
   return (
@@ -28,6 +38,8 @@ function LandingPage() {
           </p>
         </div>
       </section>
+
+      <Carousel images={misProyectos} />
 
       <section>
         <div className="section-header">
