@@ -1,5 +1,6 @@
-import MonitorMockup from './MonitorMockup';
-import PhoneMockup from './PhoneMockup';
+import MonitorMockup from '../MonitorMockup';
+import PhoneMockup from '../PhoneMockup';
+import "./ProjectCard.css";
 
 type ProjectCardProps = {
     type: string;

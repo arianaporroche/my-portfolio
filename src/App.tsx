@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ProjectCard from './components/ProjectCard';
+import ProjectCard from './components/ProjectCard/ProjectCard';
 import { projects } from './data/projects';
 import { skillColumns } from './data/skills';
 import ProyectosPage from './pages/ProyectosPage';

@@ -1,4 +1,4 @@
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
 import SectionHeader from '../components/SectionHeader';
 import { projects } from '../data/projects';
 

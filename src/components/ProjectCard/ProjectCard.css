@@ -1,0 +1,154 @@
+.project-card {
+    background: var(--card-bg);
+    border: 0.5px solid var(--card-border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.project-card:hover {
+    border-color: var(--card-border-hover);
+    box-shadow: 0 4px 24px rgba(45, 184, 160, 0.08);
+}
+
+
+.project-body {
+    padding: 1.75rem 1.75rem 1.5rem;
+}
+
+.project-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.project-type-wrap {
+    flex: 1;
+    min-width: 0;
+    align-self: flex-start;
+}
+
+.project-type {
+    font-family: var(--text);
+    font-size: 12px;
+    color: var(--tag-primary-text);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--tag-primary-bg);
+    padding: 3px 9px;
+    border-radius: 4px;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.project-year {
+    font-family: var(--text);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--text-tertiary-color);
+    align-self: start;
+    margin-left: 1rem;
+}
+
+.project-title {
+    font-family: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+}
+
+.project-desc {
+    font-family: var(--text);
+    font-size: 16px;
+    color: var(--text-secondary-color);
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.25rem;
+}
+
+.project-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-tag {
+    font-family: var(--text);
+    font-size: 14px;
+    color: var(--tag-secondary-text);
+    letter-spacing: 0.03em;
+    padding: 3px 8px;
+    border: 0.5px solid var(--tag-secondary-border);
+    border-radius: 4px;
+    background-color: var(--tag-secondary-bg);
+}
+
+.mockup-area {
+    background: var(--paper2);
+    padding: 1.75rem 1.5rem 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 180px;
+    border-bottom: 0.5px solid var(--rule);
+    overflow: hidden;
+    position: relative;
+}
+
+.mockup-area.web-only {
+    align-items: center;
+    padding-bottom: 1.75rem;
+}
+
+/* Phone mockup */
+.phone {
+    width: 72px;
+    background: var(--ink);
+    border-radius: 12px;
+    padding: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    position: relative;
+    bottom: 0;
+}
+
+.phone-inner {
+    background: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 20/44;
+}
+
+.phone-notch {
+    width: 24px;
+    height: 4px;
+    background: var(--ink);
+    border-radius: 2px;
+    margin: 0 auto 4px;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.phone-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 6px;
+}
