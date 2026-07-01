@@ -12,7 +12,7 @@ function LandingPage() {
   return (
     <>
       <section className="hero">
-        <div>
+        <div className="hero-header-box">
           <h1 className="hero-name">
             ARIANA PORROCHE
           </h1>

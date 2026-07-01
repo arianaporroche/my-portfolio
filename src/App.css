@@ -92,7 +92,7 @@ nav {
 }
 
 .hero {
-  padding-top: 2rem;
+  padding: 2rem 1rem 0 1rem;
   background: var(--surface);
   border-bottom: 0.5px solid var(--rule);
   height: calc(100vh - 10vh);
@@ -100,6 +100,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hero-header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .hero-name {
@@ -112,7 +120,8 @@ nav {
   text-align: center;
   margin-bottom: 0.5rem;
 
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .hero-meta {
@@ -123,8 +132,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
 }
 
 .hero-meta .item {
@@ -147,7 +155,7 @@ nav {
 
 .hero-desc {
   font-family: var(--text);
-  font-size: clamp(20px, 2.5vw, 40px);
+  font-size: clamp(20px, 4vw, 40px);
   margin-top: 4rem;
   line-height: 1.2;
 
@@ -178,10 +186,8 @@ nav {
     white-space: normal;
   }
 
-  .line-1,
-  .line-2,
   .line-3 {
-    text-align: center;
+    text-align: right;
   }
 }
 
