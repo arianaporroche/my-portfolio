@@ -1,10 +1,11 @@
-import SkillColumn from '../components/SkillColumn';
-import SectionHeader from '../components/SectionHeader';
-import { skillColumns } from '../data/skills';
-import { logros } from '../data/logros';
+import SkillColumn from '../../components/SkillColumn';
+import SectionHeader from '../../components/SectionHeader';
+import { skillColumns } from '../../data/skills';
+import { logros } from '../../data/logros';
 import { Link } from 'react-router-dom';
+import "./AboutMe.css";
 
-function SobreMiPage() {
+function AboutMe() {
     return (
         <>
             <section className="about-me">
@@ -104,4 +105,4 @@ function SobreMiPage() {
     );
 }
 
-export default SobreMiPage;
+export default AboutMe;

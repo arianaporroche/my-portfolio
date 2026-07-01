@@ -1,0 +1,56 @@
+.about-me {
+    padding: 5rem 3rem 4.5rem;
+    border-bottom: 0.5px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 3rem;
+}
+
+.about-me-name {
+    font-family: var(--mono);
+    font-size: clamp(3rem, 4vw, 6rem);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 2rem;
+}
+
+.about-me-name em {
+    font-style: normal;
+    color: var(--accent-mid);
+}
+
+.about-me-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.about-me-tags-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-me-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: var(--accent-light);
+    color: var(--accent-mid);
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-me-tag-icon {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
