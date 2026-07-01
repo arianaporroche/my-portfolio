@@ -19,6 +19,8 @@
   --btn-primary-bg-hover: #2DB8A0;
 
 
+  --background-color: #FFFFFF;
+
   --title-text: 'Koulen', sans-serif;
   --title-color: #000000;
   --title-border: #000000;
@@ -38,7 +40,7 @@
 }
 
 .portfolio {
-  background: var(--paper);
+  background: var(--background-color);
   color: var(--ink);
   font-family: var(--body);
   font-weight: 300;
@@ -49,7 +51,6 @@
 .hero {
   padding: calc(10vh + 2rem) 1rem 0 1rem;
   background: var(--surface);
-  border-bottom: 0.5px solid var(--rule);
   height: calc(100vh - (10vh - 1rem - 2rem - 1rem));
 
   display: flex;
