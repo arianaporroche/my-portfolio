@@ -47,10 +47,10 @@
 }
 
 .hero {
-  padding: 2rem 1rem 0 1rem;
+  padding: calc(10vh + 2rem) 1rem 0 1rem;
   background: var(--surface);
   border-bottom: 0.5px solid var(--rule);
-  height: calc(100vh - 10vh);
+  height: calc(100vh - (10vh - 1rem - 2rem - 1rem));
 
   display: flex;
   flex-direction: column;
@@ -63,6 +63,7 @@
   align-items: center;
   width: fit-content;
   max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .hero-name {

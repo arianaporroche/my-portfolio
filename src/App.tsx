@@ -37,9 +37,11 @@ function LandingPage() {
             <span className="desc-line line-3">código mantenible]</span>
           </p>
         </div>
+
+        <Carousel images={misProyectos} />
+
       </section>
 
-      <Carousel images={misProyectos} />
 
       <section>
         <div className="section-header">
