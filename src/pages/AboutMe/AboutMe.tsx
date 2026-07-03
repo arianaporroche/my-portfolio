@@ -11,11 +11,13 @@ function AboutMe() {
             <section className="about-me">
                 <div>
                     <h1 className="about-me-name">
-                        <em>Hola, soy</em> Ariana Porroche
+                        Hola, soy Ariana Porroche
                     </h1>
                     <p className="about-me-desc">
-                        Ingeniera Informática por la Universidad de Zaragoza, apasionada por construir sistemas que resuelven problemas reales.
-                        Busco mi primera oportunidad profesional donde seguir aprendiendo y contribuir desde el primer día.
+                        <em>Ingeniera informática</em> por la Universidad de Zaragoza, apasionada por construir sistemas que resuelven problemas reales.
+                    </p>
+                    <p className="about-me-desc">
+                        Busco mi primera oportunidad profesional donde seguir aprendiendo y creciendo como desarrolladora de software.
                     </p>
                     <div className="about-me-tags-container">
                         <span className="about-me-tag" key="location">
@@ -33,7 +35,7 @@ function AboutMe() {
                             Disponible
                         </span>
                     </div>
-                    <Link to="/contacto" className="hero-cta">
+                    <Link to="/contacto" className="btn-primary">
                         Contacta conmigo <span className="arrow">→</span>
                     </Link>
                 </div>
