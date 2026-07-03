@@ -292,13 +292,6 @@
   letter-spacing: 0.03em;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding: 0 3rem;
-}
-
 /* Placeholder screen content */
 .line {
   height: 6px;
