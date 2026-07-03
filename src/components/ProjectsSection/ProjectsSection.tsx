@@ -10,7 +10,7 @@ function ProjectsSection() {
                 <span className="section-title">Proyectos destacados</span>
             </div>
             <div className="projects-grid">
-                {projects.slice(0, 2).map((project) => (
+                {projects.map((project) => (
                     <ProjectCard
                         key={project.title}
                         type={project.type}
