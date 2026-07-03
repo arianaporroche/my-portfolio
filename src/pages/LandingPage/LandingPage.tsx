@@ -4,6 +4,7 @@ import { projects } from '../../data/projects';
 import { skillColumns } from '../../data/skills';
 import { Carousel } from '../../components/Carousel/Carousel';
 import './LandingPage.css';
+import TechStackSection from '../../components/TechStackSection/TechStackSection';
 
 const misProyectos = [
     '/mockups/a-darts.png',
@@ -67,24 +68,10 @@ function LandingPage() {
                 </div>
             </section>
 
-            <section style={{ marginTop: '3rem' }}>
-                <div className="section-header">
-                    <span className="section-title">Stack tecnológico</span>
-                </div>
-                <div className="about-strip">
-                    {skillColumns.map((col) => (
-                        <div key={col.label} className="about-column">
-                            <div className="about-label">{col.label}</div>
-                            {col.skills.map((s) => (
-                                <div className="skill-row" key={s.name}>
-                                    <span className="skill-name">{s.name}</span>
-                                    {s.domain && <span className="skill-domain">{s.domain}</span>}
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            </section>
+
+            <TechStackSection
+                style={{ marginTop: '3rem' }}
+            />
         </>
     );
 }
