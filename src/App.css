@@ -44,6 +44,10 @@
   --card-bg: #FFFFFF;
   --card-border: #E6E6E6;
   --card-border-hover: #727272;
+
+  --stack-card-bg: #FFFFFF;
+  --stack-card-border: #000000;
+  --stack-card-separator: #E6E6E6;
 }
 
 * {
@@ -427,54 +431,6 @@
 
 .btn-primary:hover .arrow {
   transform: translateX(4px);
-}
-
-.about-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin: 0 3rem;
-  background: transparent;
-}
-
-.about-column {
-  padding: 2.5rem;
-  border: 0.5px solid var(--rule);
-  background: var(--surface);
-  border-radius: 4px;
-}
-
-.about-label {
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--accent);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.about-label::before {
-  content: '';
-  display: inline-block;
-  width: 14px;
-  height: 1px;
-  background: var(--accent);
-}
-
-.about-text {
-  font-family: var(--display);
-  font-size: 1.45rem;
-  font-weight: 300;
-  line-height: 1.55;
-  color: var(--ink);
-  font-style: italic;
-}
-
-.about-right {
-  padding: 3rem;
 }
 
 footer {
