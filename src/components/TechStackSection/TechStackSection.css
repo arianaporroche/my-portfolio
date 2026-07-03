@@ -8,8 +8,8 @@
 
 .about-column {
     padding: 2.5rem;
-    border: 0.5px solid var(--stack-card-border);
-    background: var(--stack-card-bg);
+    border: 0.5px solid var(--table-border);
+    background: var(--table-bg);
     border-radius: 4px;
 }
 
@@ -25,19 +25,12 @@
     gap: 0.6rem;
 }
 
-/* .about-text {
-    font-family: var(--text);
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-} */
-
 .skill-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.65rem 0;
-    border-bottom: 0.5px solid var(--stack-card-separator);
+    border-bottom: 0.5px solid var(--table-separator);
     font-size: 13px;
 }
 

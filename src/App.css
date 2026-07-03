@@ -45,9 +45,9 @@
   --card-border: #E6E6E6;
   --card-border-hover: #727272;
 
-  --stack-card-bg: #FFFFFF;
-  --stack-card-border: #000000;
-  --stack-card-separator: #E6E6E6;
+  --table-bg: #FFFFFF;
+  --table-border: #000000;
+  --table-separator: #E6E6E6;
 }
 
 * {

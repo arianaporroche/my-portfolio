@@ -60,15 +60,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 1px;
     margin: 0 3rem 3rem;
-    border: 0.5px solid var(--rule);
+    border: 0.5px solid var(--table-border);
     border-radius: 4px;
     overflow: hidden;
 }
 
 .edu-card {
     padding: 1.75rem 2rem;
-    background: var(--surface);
-    border-right: 0.5px solid var(--rule);
+    background: var(--table-bg);
+    border-right: 0.5px solid var(--table-border);
 }
 
 .edu-card:last-child {
@@ -76,17 +76,16 @@
 }
 
 .edu-card-label {
-    font-family: var(--mono);
-    font-size: 9px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
+    font-family: var(--text);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary-color);
     margin-bottom: 1.25rem;
 }
 
 .edu-entry {
     padding: 0.9rem 0;
-    border-top: 0.5px solid var(--rule);
+    border-top: 0.5px solid var(--table-separator);
 }
 
 .edu-entry:first-of-type {
@@ -103,18 +102,17 @@
 }
 
 .edu-entry-title {
-    font-family: var(--body);
-    font-size: 0.95rem;
-    font-weight: 400;
-    color: var(--ink);
+    font-family: var(--text);
+    font-size: 20px;
+    color: var(--text-color);
 }
 
 .edu-entry-badge {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.04em;
-    color: var(--muted);
-    background: var(--paper2);
+    font-family: var(--text);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--tag-primary-text);
+    background: var(--tag-primary-bg);
     padding: 2px 7px;
     border-radius: 2px;
     white-space: nowrap;
@@ -122,15 +120,15 @@
 }
 
 .edu-entry-badge--level {
-    color: var(--accent-mid);
-    background: var(--accent-light);
+    color: var(--tag-secondary-text);
+    background: var(--tag-secondary-bg);
 }
 
 .edu-entry-sub {
-    font-family: var(--body);
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: var(--muted);
+    font-family: var(--text);
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary-color);
 }
 
 @media (max-width: 640px) {
@@ -141,7 +139,7 @@
 
     .edu-card {
         border-right: none;
-        border-bottom: 0.5px solid var(--rule);
+        border-bottom: 0.5px solid var(--table-border);
     }
 
     .edu-card:last-child {
