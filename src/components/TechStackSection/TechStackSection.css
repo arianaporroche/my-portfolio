@@ -2,8 +2,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
-    margin: 0 3rem;
+    margin: 0 3rem 3rem;
     background: transparent;
+}
+
+@media (max-width: 900px) {
+    .about-strip {
+        margin: 0 2.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-strip {
+        margin: 0 2rem 2rem;
+    }
 }
 
 .about-column {
