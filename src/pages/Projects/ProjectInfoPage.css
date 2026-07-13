@@ -30,6 +30,7 @@
     color: var(--text);
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-align: justify;
 }
 
 .project-section-title {
@@ -70,9 +71,11 @@
 }
 
 .project-architecture-image {
-    max-height: 200px;
-    display: flex;
-    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0.5rem auto 0;
 }
 
 .mockup-gallery {
