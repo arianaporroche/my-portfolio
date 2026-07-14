@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import ScrollToTop from './components/ScrollToTop';
 import ProjectsPage from './pages/Projects/ProjectsPage';
 import ProjectInfoPage from './pages/Projects/ProjectInfoPage';
 import AboutMe from './pages/AboutMe/AboutMe';
@@ -11,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="portfolio">
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
