@@ -1,4 +1,14 @@
-export const techStackColumns = [
+export type TechStackItemProps = {
+    name: string;
+    domain?: string;
+};
+
+export type TechStackColumnsProps = {
+    label: string;
+    items: TechStackItemProps[];
+};
+
+export const techStackColumns: TechStackColumnsProps[] = [
     {
         label: 'Frontend',
         items: [

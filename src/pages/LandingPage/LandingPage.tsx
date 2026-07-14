@@ -39,9 +39,7 @@ function LandingPage() {
 
             <ProjectsSection preview />
 
-            <TechStackSection
-                style={{ marginTop: '3rem' }}
-            />
+            <TechStackSection />
         </>
     );
 }

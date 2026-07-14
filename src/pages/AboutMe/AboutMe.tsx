@@ -1,11 +1,10 @@
-import TechStackColumn from '../../components/TechStackColumn';
 import SectionHeader from '../../components/SectionHeader';
-import { techStackColumns } from '../../data/techStack';
 import { logros } from '../../data/logros';
 import { Link } from 'react-router-dom';
 import "./AboutMe.css";
 import { skillsColumns } from '../../data/skills';
 import SkillsColumn from '../../components/SkillsColumn';
+import TechStackSection from '../../components/TechStackSection/TechStackSection';
 
 function AboutMe() {
     return (
@@ -97,14 +96,7 @@ function AboutMe() {
                 </div>
             </section>
 
-            <section>
-                <SectionHeader title="Stack tecnológico" />
-                <div className="about-strip">
-                    {techStackColumns.map((column) => (
-                        <TechStackColumn key={column.label} label={column.label} items={column.items} />
-                    ))}
-                </div>
-            </section>
+            <TechStackSection />
 
             <section>
                 <SectionHeader title="Habilidades y competencias" />
