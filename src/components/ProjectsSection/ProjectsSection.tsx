@@ -15,27 +15,29 @@ function ProjectsSection({ preview = false }: ProjectsSectionProps) {
             <div className="section-header">
                 <span className="section-title">Proyectos destacados</span>
             </div>
-            <div className="projects-grid">
-                {visibleProjects.map((project) => (
-                    <ProjectCard
-                        key={project.title}
-                        type={project.type}
-                        year={project.year}
-                        title={project.title}
-                        summary={project.summary}
-                        techStack={project.techStack}
-                        image={project.image}
-                        alt={project.alt}
-                    />
-                ))}
-            </div>
-            {preview && (
-                <div style={{ padding: '1.5rem 3rem 0' }}>
-                    <Link to="/proyectos" className="btn-primary">
-                        Ver todos los proyectos <span className="arrow">→</span>
-                    </Link>
+            <div className="projects-container">
+                <div className="projects-grid">
+                    {visibleProjects.map((project) => (
+                        <ProjectCard
+                            key={project.title}
+                            type={project.type}
+                            year={project.year}
+                            title={project.title}
+                            summary={project.summary}
+                            techStack={project.techStack}
+                            image={project.image}
+                            alt={project.alt}
+                        />
+                    ))}
                 </div>
-            )}
+                {preview && (
+                    <div className="projects-btn">
+                        <Link to="/proyectos" className="btn-primary">
+                            Ver todos los proyectos <span className="arrow">→</span>
+                        </Link>
+                    </div>
+                )}
+            </div>
         </section>
     );
 }

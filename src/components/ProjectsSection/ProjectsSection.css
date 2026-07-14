@@ -1,6 +1,25 @@
+.projects-container {
+    margin: 0 3rem 3rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 1.5rem;
-    padding: 0 3rem;
+}
+
+.projects-btn {
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .projects-container {
+        margin: 0 2.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-container {
+        margin: 0 2rem 2rem;
+    }
 }
