@@ -14,6 +14,8 @@ nav {
     right: 1rem;
     z-index: 1000;
     margin: 0;
+
+    transition: border-radius 0.3s ease, height 0.3s ease;
 }
 
 .nav-logo {
@@ -23,6 +25,7 @@ nav {
     letter-spacing: 0.05em;
     text-decoration: none;
     transition: color 0.2s;
+    white-space: nowrap;
 }
 
 .nav-logo:hover {
@@ -33,6 +36,8 @@ nav {
     display: flex;
     gap: 2.5rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -50,5 +55,102 @@ nav {
 }
 
 .nav-link--active {
+    font-weight: 600;
     border-bottom: 1.5px solid var(--navbar-text);
+}
+
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1001;
+}
+
+.hamburger-bar {
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background: var(--navbar-text);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+.bar-top.open {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.bar-mid.open {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.bar-bot.open {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 10vh;
+        padding: 0 1.5rem 0 1.5rem;
+        border-radius: 32px;
+        align-items: center;
+    }
+
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding: 1rem 0 0;
+        overflow: hidden;
+    }
+
+    .nav-links--open {
+        display: flex;
+        animation: slideDown 0.25s ease forwards;
+    }
+
+    .nav-links li {
+        border-top: 0.5px solid var(--navbar-border);
+    }
+
+    .nav-links li:first-child {
+        border-top: none;
+    }
+
+    .nav-link {
+        display: inline-block;
+        margin: 0.5rem 0 0.75rem 0.5rem;
+        border-bottom: 1.5px solid transparent;
+    }
+
+    .nav-link--active {
+        font-weight: 600;
+        border-bottom: 1.5px solid var(--navbar-text);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
