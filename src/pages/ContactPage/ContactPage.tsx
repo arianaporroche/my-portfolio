@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import SectionHeader from '../../components/SectionHeader';
-import './ContactoPage.css';
+import './ContactPage.css';
 
 type FormStatus = 'idle' | 'sending' | 'sent' | 'error';
 
@@ -12,7 +12,7 @@ const MOTIVO_OPTIONS = [
     { value: 'otro', label: 'Otro' },
 ];
 
-function ContactoPage() {
+function ContactPage() {
     const formRef = useRef<HTMLFormElement>(null);
     const [status, setStatus] = useState<FormStatus>('idle');
     const [errors, setErrors] = useState<Record<string, string>>({});
@@ -208,4 +208,4 @@ function ContactoPage() {
     );
 }
 
-export default ContactoPage;
+export default ContactPage;

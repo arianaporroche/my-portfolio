@@ -5,7 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import ProjectsPage from './pages/Projects/ProjectsPage';
 import ProjectInfoPage from './pages/Projects/ProjectInfoPage';
 import AboutMe from './pages/AboutMe/AboutMe';
-import ContactoPage from './pages/ContactoPage/ContactoPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/proyectos" element={<ProjectsPage />} />
           <Route path="/proyectos/:slug" element={<ProjectInfoPage />} />
           <Route path="/sobre-mi" element={<AboutMe />} />
-          <Route path="/contacto" element={<ContactoPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </div>
     </BrowserRouter>
