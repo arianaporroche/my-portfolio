@@ -83,7 +83,6 @@
     flex-direction: row;
     gap: 0.5rem;
     overflow-x: auto;
-    scrollbar-width: none;
 }
 
 .mockup-frame {
@@ -91,6 +90,7 @@
     overflow: hidden;
     border-radius: 8px;
     background: transparent;
+    margin-bottom: 0.5rem;
 }
 
 .mockup-frame--portrait {
